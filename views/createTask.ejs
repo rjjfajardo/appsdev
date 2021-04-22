@@ -1,0 +1,39 @@
+<%- include('./partials/head.ejs') %>
+
+<body>
+    <section>
+        <form action="/task/create_task" method="get" id="createTask">
+        <div class="container" style="border: 1px solid black; padding: 20px;">
+          <div class="row justify-content-center">
+
+            <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+              <div class="row">
+                <div class="col text-center">
+                  <h1>CREATE TASK</h1>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col mt-4">
+                  <input type="text" name="task" class="form-control" placeholder="Enter task name" required>
+                </div>
+              </div>
+              <div class="row align-items-center mt-4">
+                    <textarea class="form-control" form="createTask" placeholder="Enter task description" name="desc" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              
+              <div class="row justify-content-start mt-4">
+                <div class="col">
+                  <center><button type="submit" class="btn btn-success mt-4">Save</button></center>
+                </div>
+               
+              </div>
+            </div>
+
+          
+          
+        </div>
+    </form>
+      </section>
+  </body>
+  
+</html>
